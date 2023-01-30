@@ -28,7 +28,6 @@ function setDefaultTheme() {
 //Set the default theme to light if one has not been set in the browsers localStorage
 setDefaultTheme();
 
-
 // I did not understand how @param x affected the following code block
 // I did not ask about it because it was already too late to ask anyone by the time I found it
 /**
@@ -39,8 +38,8 @@ function toggleMode(x) {
   let colorTheme = document.body.classList; // get the body's CSS class
   let iconMode = x.classList; // get the current classes assigned to the triggered button
 
-//Changes the light theme to dark or the dark to light, depending on which is active 
-//Results are reflected in the local storage
+  //Changes the light theme to dark or the dark to light, depending on which is active
+  //Results are reflected in the local storage
   if (colorTheme.value === "light-theme") {
     localStorage.clear();
     localStorage.setItem("mode", "dark-theme");
@@ -62,7 +61,7 @@ function toggleMode(x) {
 }
 
 //The local storage is reset
-//Even when the local storage is reset, the default light theme needs to be manually selected 
+//Even when the local storage is reset, the default light theme needs to be manually selected
 function clearLocalStorage() {
   localStorage.clear();
   document.body.classList.value = "light-theme";
