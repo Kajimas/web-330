@@ -1,9 +1,21 @@
 <!-- 
 Title: Assignment 5 – Bob’s Automotive Repair Shop
 Author: Richard Krasso
-Date: //2023
-Description: 
+Date: 2/5/2023
+Description: A PDF that describes how to complete Web 330 Assign_5
 -->
+<!-- 
+Title: bujri-bobs-auto-repair.html (https://github.com/nbujri/web-330/blob/main/week-5/bujri-bobs-auto-repair.html)
+Author: Ngi Bujri
+Date: 2/5/2023
+Description: A fellow student's public work shared with the class on slack was very helpful for locating multiple errors within this document that were preventing my code from running successfully. 
+-->
+<!--
+Title: gorham-bobs-auto-repair.html (https://github.com/chrisgorham999/web-330/blob/main/week-5/gorham-bobs-auto-repair.html)
+Author: Chris Gorham
+Date: 2/5/2023
+Description: A fellow student's public work shared with the class on slack was very helpful for locating multiple errors within this document that were preventing my code from running successfully. 
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +23,7 @@ Description:
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>week-4</title>
+    <title>week-5</title>
     <!-- Link to stylesheets and fonts -->
     <link rel="stylesheet" type="text/css" href="../site.css" />
     <link rel="stylesheet" type="text/css" href="../theme.css" />
@@ -29,33 +41,41 @@ Description:
     <script src="cart-component.js" defer></script>
     <script type="module" src="Egge-bobs-auto-repair.js" defer></script> 
   </head>
-  <div id="container">
+
+<body>
+  
+
+
+  <div id="assign-container">
       <!-- This section corresponds with exhibit 1 -->
       <h1 class="app-header">Welcome to Bob’s Automotive Repair Shop!</h1>
 
 
-    <!-- This section corresponds with exhibit 2 -->
-  <div id="card-example">
+    <!-- This section corresponds with exhibits 2 and 3 -->
+  <div class="assign-content">
+    <div id="card-example">
     <div class="card">
       <div class="card-title">Product Listing
+        <br>
         <cart-component></cart-component>
       </div>
-      <div class="card-content">
-          <div class="form">
-          <div class="form-field">
 
+      <!-- This section corresponds with exhibits 4, 5, and 6 -->
+      <div class="card-content">
+        <div class="form">
+          <div class="form-field">
             <label for="productList">Choose a product:</label>
-            <select name="sequence" id="productList" class="drop-down-menu">
+            <select name="productList" id="productList" class="drop-down-menu">
               <option value="select">--Select--</option>
               <option value="19.99">Oil Change</option>
               <option value="18.44">Filter Replacement</option>
               <option value="9.99">Wiper Fluid Refill</option>
             </select>
-<br>
-        <i id="cart-message">To view your shopping cart click on the cart icon</i>
-
+            <br>
+            <i id="cart-message">To view your shopping cart click on the cart icon</i>
+          </div>
         </div>
-    </div>
+      <!-- This section corresponds with exhibit 7 -->
       <div class="form-field">
         <button class="btn btn-primary full-width" id="btnAddProduct">
           Add to Cart
@@ -66,10 +86,11 @@ Description:
   </div>
 </div>
 
-<!-- This section corresponds with exhibits 12 -->
+
+<!-- This section corresponds with exhibits 8 -->
   <a class="return-home" href="../index.html">Return</a>
 
-    <!-- This section corresponds with exhibit 13 and 14 -->
+    <!-- This section corresponds with exhibits 9, 10, and 11 -->
     <div id="card-example">
       <div class="card">
         <div class="card-title">Shopping Cart</div>
@@ -78,4 +99,6 @@ Description:
         </div>
       </div>
     </div>
+  </div>
+  </body>
 </html>

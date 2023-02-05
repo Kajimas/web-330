@@ -5,63 +5,11 @@ Date: 1/8/2023
 Description: A PDF that instructs students on how to set up their environment for their assignments
 */
 /*
-    Title: theme.css
-    Author: Professor Krasso
-    Date: 1/8/2023
-    Description: Demonstrates how to create CSS variables for website themes
+Title: theme.css
+Author: Professor Krasso
+Date: 1/8/2023
+Description: Demonstrates how to create CSS variables for website themes
 */
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-}
-
-.card-title {
-  color: #4f3674;
-  font-size: 2em;
-  font-weight: 400;
-  text-align: center;
-}
-
-.card-content {
-  padding: 2px 16px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.btn {
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  padding: 15px 32px;
-  color: #000;
-  text-align: center;
-}
-
-.btn-primary {
-  background-color: #4f3674;
-  color: #fff;
-}
-
-.btn-primary:hover {
-  background-color: #d6a800;
-  color: #4f3674;
-}
-
-.input,
-.drop-down-menu {
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
 
 body.light-theme {
   --text-color: #000;
@@ -118,6 +66,61 @@ a:hover {
   background-color: var(--anchor-hover-background-color);
   color: var(--anchor-hover-color);
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card-title {
+  color: #4f3674;
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card-content {
+  padding: 2px 16px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  color: #000;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #4f3674;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #d6a800;
+  color: #4f3674;
+}
+
+.input,
+.drop-down-menu {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
 
 #icon-mode:hover {
   cursor: pointer;
@@ -177,7 +180,7 @@ h4 {
 }
 
 .drop-down-menu {
-  color: var(--input-border-color);
+  border-color: var(--input-border-color);
 }
 
 /* week 4 additions */
