@@ -1,10 +1,14 @@
-/* 
+/*
+Title: Assignment 6 – Future Value App
+Author: Richard Krasso
+Date: 2/12/2023
+Description: A PDF that describes how to complete Web 330 Assign_6 
 */
 
+/* apples to the error log and the hint*/
 .danger {
-    float: right;
-    color: #df546a;
-    font-size: 12px;
-    letter-spacing: 2px;
-  }
-  
+  float: right;
+  color: #df546a;
+  font-size: 12px;
+  letter-spacing: 2px;
+}

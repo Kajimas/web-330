@@ -1,9 +1,21 @@
 /* 
-Title: 
+Title: Assignment 6 – Future Value App
 Author: Richard Krasso
-Date: //2023
-Description: A PDF that describes how to complete Web 330 Assign_6
+Date: 2/12/2023
+Description: A PDF that describes how to complete Web 330 Assign_6 
  */
+/*
+Title: validator.js (https://github.com/nbujri/web-330/blob/main/week-6/validator.js)
+Author: Ngi Bujri
+Date: 2/12/2023
+Description: A fellow student's public work shared with the class on slack was very helpful for locating multiple errors within this document that were preventing my code from running successfully.  
+*/
+/*
+Title: validator.js (https://github.com/chrisgorham999/web-330/blob/main/week-6/validator.js)
+Author: Chris Gorham
+Date: 2/12/2023
+Description: A fellow student's public work shared with the class on slack was very helpful for locating multiple errors within this document that were preventing my code from running successfully.  
+*/
 
 "use strict";
 
@@ -12,6 +24,8 @@ import { FloatField } from "./float-field.js";
 import { FloatMinField } from "./float-min-field.js";
 import { FloatMaxField } from "./float-max-field.js";
 
+//Used to detect whether an input fits its criteria
+//If a input does not fit its criteria, a message is pushed 
 export class Validator {
   validators = [];
   messages = [];
@@ -22,8 +36,6 @@ export class Validator {
   }
 
   addRequiredField() {
-    console.log(this.name)
-    console.log(this.field)
     this.validators.push(new RequiredField(this.name, this.field));
   }
 
@@ -32,9 +44,6 @@ export class Validator {
   }
 
   addFloatMinField(min) {
-    console.log(this.name)
-    console.log(this.field)
-    console.log(min)
     this.validators.push(new FloatMinField(this.name, this.field, min));
   }
 
@@ -44,10 +53,11 @@ export class Validator {
 
   validate() {
     for (let item of this.validators) {
-      //may need to change
-    //   console.log(item.validate())
-     if (!item.validate()) this.messages.push(item.getMessage())
-      return item.validate()
+      if (item.validate() === false) {
+        this.messages.push(item.getMessage());
+        return false;
+      }
     }
+    return true;
   }
 }

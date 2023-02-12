@@ -1,9 +1,23 @@
 <!--  
-Title: 
+Title: Assignment 6 – Future Value App
 Author: Richard Krasso
-Date: //2023
+Date: 2/12/2023
 Description: A PDF that describes how to complete Web 330 Assign_6 
  -->
+<!-- 
+Title: bujri-future-value.html (https://github.com/nbujri/web-330/blob/main/week-6/bujri-future-value.html)
+Author: Ngi Bujri
+Date: 2/12/2023
+Description: A fellow student's public work shared with the class on slack was very helpful for locating multiple errors within this document that were preventing my code from running successfully. 
+-->
+<!--
+Title: gorham-future-value.html (https://github.com/chrisgorham999/web-330/blob/main/week-6/gorham-future-value.html)
+Author: Chris Gorham
+Date: 2/12/2023
+Description: A fellow student's public work shared with the class on slack was very helpful for locating multiple errors within this document that were preventing my code from running successfully. 
+ -->
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,35 +49,27 @@ Description: A PDF that describes how to complete Web 330 Assign_6
 
 
   <div id="assign-container">
-      <!-- This section corresponds with exhibit  -->
+      <!-- This section corresponds with exhibits 1 and 2 -->
       <h1 class="app-header">Welcome to the Future Value App!</h1>
-
-
-    <!-- This section corresponds with exhibits  and  -->
-  <div class="assign-content">
-    <div id="card-example">
-    <div class="card">
-      <div class="card-title">Future Value Calculator</div>
-
-      <!--  -->
-      <div class="card-content">
-        <div class="form">
-          <div class="form-field">
-           
-            <div class="col-12 danger" id="errorLog"></div>
-            <div class="row">
-
+        <div class="assign-content">
+            <div id="card-example">
+            <div class="card">
+            <div class="card-title">Future Value Calculator</div>
+            <div class="card-content">
+                <div class="form">
+                    <div class="form-field">
+                        <div class="col-12 danger" id="errorLog"></div>
+                        
+                        <div class="row">
+                <!--  This section corresponds with exhibits 3 through 7-->
                 <label for="txtMonthlyPayment" class="form-label col-5">Monthly Payment:</label>
                 <input type="text" id="txtMonthlyPayment" class="form-field col-7">
-                
-                
                 <label for="txtYearlyRate" class="form-label col-5">Interest Rate:</label>
-                
                 <input type="text" id="txtYearlyRate" class="form-field col-7">
                 <i class="danger">Enter 11% as 11.1:</i>
                 
                 
-                
+                <!--  This section corresponds with exhibits 8 and 9 -->
                 <label for="" class="form-label col-5">Number of Years:</label>
                 <select name="listNumOfYears" id="listNumOfYears" class="drop-down-menu col-7">
                     <option value="1">1</option>
@@ -80,7 +86,8 @@ Description: A PDF that describes how to complete Web 330 Assign_6
             </div>
           </div>
         </div>
-      <!--  -->
+      
+        <!-- This section corresponds with exhibit 10 -->
       <div class="form-field">
         <button class="btn btn-primary full-width" id="btnCalculator">
           Calculate
@@ -92,10 +99,10 @@ Description: A PDF that describes how to complete Web 330 Assign_6
 </div>
 
 
-<!--  -->
+<!-- This section corresponds with exhibit 11 -->
   <a class="return-home" href="../index.html">Return</a>
 
-    <!--  -->
+    <!-- This section corresponds with exhibits 12 and 13 -->
     <div id="card-example">
       <div class="card">
         <div class="card-title">Calculation as of <span id="today"></span></div>
