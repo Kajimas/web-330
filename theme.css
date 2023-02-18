@@ -201,3 +201,45 @@ body.dark-theme {
   --table-hover-background-color: #7d4787;
   --table-hover-color: #fff;
 }
+
+
+/* copied from my 231 CSS*/
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+th {
+  padding: 12px 0 12px;
+
+  text-align: left;
+  background-color: #4f3674;
+  color: #fff;
+}
+
+tr:hover {
+  color: #4f3674;
+  background-color: #d6a800;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: var(--table-header-background-color);
+  color: var(--table-header-color);
+}
+
+td,
+th {
+  border: 1px solid var(--table-border-color);
+}
+
+tr:hover {
+  background-color: var(--table-hover-background-color);
+  color: var(--table-hover-color);
+  cursor: pointer;
+}
