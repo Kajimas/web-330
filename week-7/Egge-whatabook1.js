@@ -12,6 +12,8 @@ Description: A fellow student's public work shared with the class on slack was v
 */
 "use strict";
 
+// Fetches data from the XML document
+// A function that will be defined later is called
 addEventListener(`DOMContentLoaded`, () => {
   const fileName = `books.xml`;
 
@@ -25,6 +27,8 @@ addEventListener(`DOMContentLoaded`, () => {
     });
 });
 
+// The table is created from the XML document
+// The table is sent to the HTML element with the "bookList" id
 function loadBooks(xml) {
   const books = xml.getElementsByTagName(`book`);
   let tableData = `<table id="bookTable" class="table"><th>ISBN</th><th>Title</th><th>Description</th><th>Pages</th><th>Authors</th><tbody>`;
@@ -49,6 +53,7 @@ function loadBooks(xml) {
   document.getElementById(`bookList`).innerHTML = tableData;
 }
 
+//A function that is needed to simplify the addIsbnClickEvents() function
 function anchorClicked(e) {
   e.preventDefault();
   const data = this.parentElement.parentElement.querySelectorAll(`td`);
@@ -61,6 +66,8 @@ function anchorClicked(e) {
   document.getElementById(`selectedBook`).innerHTML = bookData;
 }
 
+//A function that allows the ISBN values of the table to be clicked
+//When the values are clicked, the data of the selected book will appear below
 function addIsbnClickEvents() {
   const viewButtons = document.querySelectorAll(`#bookTable tbody .isbn-link`);
   for (let i = 0; i < viewButtons.length; i++) {
